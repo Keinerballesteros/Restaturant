@@ -124,35 +124,47 @@ public class Ventana extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        String message = "--------------------------------------------------------Estadisticas------------------------------------------------------------ \n";
+        
+        
         // La cantidad de platos vendidos en la semana
-        objectoMenu.platosVendidosALaSemana();
+        message += objectoMenu.platosVendidosALaSemana() +"\n";
+       
+        
         // La cantidad de cada plato que se vendio a la semana
+        message += objectoMenu.totalVendidosDeCadaPlato() +"\n";
+       
         
-        objectoMenu.totalVendidosDeCadaPlato();
         // Dia de la semana que mas se vendio de ese plato
+        message += objectoMenu.diaMasVendidoParaCadaPlato() +"\n";
+       
         
-        objectoMenu.diaMasVendidoParaCadaPlato();
         // Dia de la semana que menos se vendio ese plato
+        message += objectoMenu.diaMenosVendidoParaCadaPlato() +"\n";
+       
         
-        objectoMenu.diaMenosVendidoParaCadaPlato();
         // Dia de la semana que mas se vende
         // Dia de la semana que menos se vendio
-        objectoMenu.diaDeLaSemanaQueMasYMenosSeVende();
+        message += objectoMenu.diaDeLaSemanaQueMasYMenosSeVende() +"\n";
         
         
       
         // Sacar 5 estadisticas mas como promedio, etc
+        message += "--------------------------------------------Estadisticas Adicionales-------------------------------------------------- \n";
         
         //Promedio de platos Vendidos
-        objectoMenu.promedioDePlatosVendidosALaSemana();
+        message += objectoMenu.promedioDePlatosVendidosALaSemana() +"\n";
+      
+        
         
         //Promedio de platos Vendidos cada Dia
-        objectoMenu.promedioDePlatosVendidosCadaDia();
+        message += objectoMenu.promedioDePlatosVendidosCadaDia() +"\n";
+       
         
         //Total de Platos Vendidos a la Semana
+        message += objectoMenu.totalDePlatosVendidosCadaDia() +"\n";
         
-        objectoMenu.totalDePlatosVendidosCadaDia();
-        
+        JOptionPane.showMessageDialog(rootPane, message);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
