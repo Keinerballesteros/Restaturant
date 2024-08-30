@@ -5,21 +5,29 @@
 package com.mycompany.restaurant;
 
 public class Platos {
-    private  String name;
-    private  int price;
+    private  String nombre;
+    private  int precio;
+    private int costo;
 
-    public Platos(String name, int price) {
-        this.name = name;
-        this.price = price;
+    public Platos(String nombre, int precio, int costo) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.costo = costo;
     }
 
-    public String getName() {
-        return name;
+    public String getNombre() {
+        return nombre;
     }
 
-    public int getPrice() {
-        return price;
+    public int getPrecio() {
+        return precio;
     }
+
+    public int getCosto() {
+        return costo;
+    }
+    
+    
     
     
 }

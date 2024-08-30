@@ -146,12 +146,11 @@ public class Ventana extends javax.swing.JFrame {
         // Dia de la semana que mas se vende
         // Dia de la semana que menos se vendio
         message += objectoMenu.diaDeLaSemanaQueMasYMenosSeVende() +"\n";
-        
-        
-      
-        // Sacar 5 estadisticas mas como promedio, etc
-        message += "--------------------------------------------Estadisticas Adicionales-------------------------------------------------- \n";
-        
+     
+     
+   
+//        // Sacar 5 estadisticas mas como promedio, etc
+    message += "--------------------------------------------Estadisticas Adicionales-------------------------------------------------- \n";   
         //Promedio de platos Vendidos
         message += objectoMenu.promedioDePlatosVendidosALaSemana() +"\n";
       
@@ -160,9 +159,9 @@ public class Ventana extends javax.swing.JFrame {
         //Promedio de platos Vendidos cada Dia
         message += objectoMenu.promedioDePlatosVendidosCadaDia() +"\n";
        
-        
-        //Total de Platos Vendidos a la Semana
-        message += objectoMenu.totalDePlatosVendidosCadaDia() +"\n";
+   
+       //Total de Platos Vendidos a la Semana
+       message += objectoMenu.totalDePlatosVendidosCadaDia() +"\n";
         
         JOptionPane.showMessageDialog(rootPane, message);
     }//GEN-LAST:event_jButton4ActionPerformed
